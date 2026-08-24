@@ -23,54 +23,20 @@ API_ROOT = "https://api.github.com"
 GRAPHQL_URL = "https://api.github.com/graphql"
 USER_AGENT = "Omtilekar-profile-readme"
 FONT_STACK = "Consolas, Monaco, 'Courier New', monospace"
+SCRIPT_DIR = Path(__file__).resolve().parent
+PORTRAIT_PATH = SCRIPT_DIR / "assets" / "ascii-portrait.txt"
 
-ASCII_PORTRAIT = r"""
-                       .=+*#$$$$#*+=.
-                    .=#%$########$%#=.
-                  .+#$###&&&&&&###$#+.
-                 :$##&&********&&##$:
-                :$#&**++======++**&#$:
-               .%#&*+=-::::::::-=+*&#%.
-               $#&*=-:.        .:-=*&#$
-              .#&*=-:.          .:-+*&#.
-              =#*+-:.            .:-+*#=
-              +&*=-:.            .:-=*#+
-              *&*=-==++=----=++==-+*&*
-              *&+=+*####*++*####*+=+&*
-              *&+=|:::::|++|:::::|=+&*
-              +&+=+*##*+=--=+*##*+=+&+
-              :#*=-:---:  ::---:-=*#:
-               *#*=-:.    ||    .:=*#
-               =#&+=-:.  /||\  .:-+&=
-                *#&+=-. .:++:. .-=&#*
-                :#&&+=-..----..-=&&#:
-                 =#&&*+=+****+=*&&#=
-                  =#&&&########&&#=
-                   :*#&&&&&&&&#*:
-                     .=+******+=.
-                        .::::.
-                  .::/==\    /==\::.
-               .:/+***+=\  /=+***+\:.
-            .:=*&&&&&&&*|  |*&&&&&&&*=:.
-          .-+#%%%%####&*|  |*####%%%%#+-.
-         :=#%$###&&&***|    |***&&&###$#=:
-        -#%$##&&***+++=|    |==+++***&&##%#-
-       :#%$#&**++==--:/      \:--==++**&#$%#:
-       +%$#&*+=-::.  /   ||   \  .::-=+*&#$%+
-      .#%$#*+=-:.   /   .||.   \   .:-=+*#$%#.
-      -%$#&+=-:.   /   .+##+.   \   .:-=+&#$%-
-      =%$#*+=-.   /   .=#%%#=.   \   .-=+*#$%=
-      =%$#*+-:.  /   :=#%%%%#=:   \  .:-+*#$%=
-      -%$#&+=-. /   :+#%%$$%%#+:   \ .-=+&#$%-
-      .#%$#*+=-/   :+#%$$$$%%#+:   \-=+*#$%#.
-       +%$##&*/   .=#%$$$$$$%#=.    \*&#$%+
-       :#%$##&+==+#%$########$%#+==+&##$%#:
-        -#%$###&&&###&&****&&###&&&###$%#-
-         :=#%%$######&&++++&&######$%%#=:
-           .-+#%$$####&&&&&&####$$%#+-.
-              .:=*#%%$$$$$$$$%%#*=:.
-                   .:-=++++=-:.
-""".strip("\n").splitlines()
+
+def load_ascii_portrait() -> list[str]:
+    if not PORTRAIT_PATH.exists():
+        raise FileNotFoundError(f"Missing ASCII portrait source: {PORTRAIT_PATH}")
+
+    lines = PORTRAIT_PATH.read_text(encoding="utf-8").splitlines()
+    while lines and not lines[0].strip():
+        lines.pop(0)
+    while lines and not lines[-1].strip():
+        lines.pop()
+    return [line.rstrip() for line in lines]
 
 
 @dataclass
@@ -357,28 +323,28 @@ THEMES = {
 def render_svg(theme_name: str, stats: ProfileStats, user_name: str) -> str:
     theme = THEMES[theme_name]
     right_lines = profile_lines(stats, user_name)
-    portrait = tspans(ASCII_PORTRAIT, 48, 68, 11.0)
-    info = tspans(right_lines, 600, 110, 15.4)
+    portrait = tspans(load_ascii_portrait(), 42, 76, 8.0)
+    info = tspans(right_lines, 625, 110, 15.4)
 
     return f"""<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="660" viewBox="0 0 1100 660" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700" role="img" aria-labelledby="title desc">
   <title id="title">Om Tilekar GitHub profile card</title>
   <desc id="desc">Terminal-style profile card with a text-symbol portrait and dynamic GitHub statistics.</desc>
-  <rect width="1100" height="660" rx="0" fill="{theme['background']}"/>
-  <rect x="24" y="24" width="1052" height="612" rx="8" fill="{theme['panel']}" stroke="{theme['border']}" stroke-width="1.5"/>
-  <path d="M552 52V608" stroke="{theme['border']}" stroke-width="1"/>
+  <rect width="1100" height="700" rx="0" fill="{theme['background']}"/>
+  <rect x="24" y="24" width="1052" height="652" rx="8" fill="{theme['panel']}" stroke="{theme['border']}" stroke-width="1.5"/>
+  <path d="M590 52V648" stroke="{theme['border']}" stroke-width="1"/>
   <circle cx="54" cy="50" r="5" fill="{theme['accent']}" opacity="0.95"/>
   <circle cx="74" cy="50" r="5" fill="{theme['secondary']}" opacity="0.55"/>
   <circle cx="94" cy="50" r="5" fill="{theme['secondary']}" opacity="0.35"/>
-  <text x="600" y="52" fill="{theme['secondary']}" font-family="{FONT_STACK}" font-size="13">~/profile/readme</text>
-  <text xml:space="preserve" fill="{theme['portrait']}" font-family="{FONT_STACK}" font-size="10.4" font-weight="600" letter-spacing="0">
+  <text x="625" y="52" fill="{theme['secondary']}" font-family="{FONT_STACK}" font-size="13">~/profile/readme</text>
+  <text xml:space="preserve" fill="{theme['portrait']}" font-family="{FONT_STACK}" font-size="7.2" font-weight="700" letter-spacing="0">
 {portrait}
   </text>
   <text xml:space="preserve" fill="{theme['primary']}" font-family="{FONT_STACK}" font-size="13.5" letter-spacing="0">
 {info}
   </text>
-  <text x="600" y="84" fill="{theme['accent']}" font-family="{FONT_STACK}" font-size="16" font-weight="700">{escape(user_name.lower())}</text>
-  <rect x="596" y="94" width="268" height="2" fill="{theme['glow']}" opacity="0.35"/>
+  <text x="625" y="84" fill="{theme['accent']}" font-family="{FONT_STACK}" font-size="16" font-weight="700">{escape(user_name.lower())}</text>
+  <rect x="621" y="94" width="268" height="2" fill="{theme['glow']}" opacity="0.35"/>
 </svg>
 """
 
