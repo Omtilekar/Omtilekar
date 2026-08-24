@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="660" viewBox="0 0 1100 660" role="img" aria-labelledby="title desc">
+  <title id="title">Om Tilekar GitHub profile card</title>
+  <desc id="desc">Terminal-style profile card with a text-symbol portrait and dynamic GitHub statistics.</desc>
+  <rect width="1100" height="660" rx="0" fill="#0d1117"/>
+  <rect x="24" y="24" width="1052" height="612" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <path d="M552 52V608" stroke="#30363d" stroke-width="1"/>
+  <circle cx="54" cy="50" r="5" fill="#58a6ff" opacity="0.95"/>
+  <circle cx="74" cy="50" r="5" fill="#8b949e" opacity="0.55"/>
+  <circle cx="94" cy="50" r="5" fill="#8b949e" opacity="0.35"/>
+  <text x="600" y="52" fill="#8b949e" font-family="Consolas, Monaco, 'Courier New', monospace" font-size="13">~/profile/readme</text>
+  <text xml:space="preserve" fill="#c9d1d9" font-family="Consolas, Monaco, 'Courier New', monospace" font-size="10.4" font-weight="600" letter-spacing="0">
+<tspan x="48" y="68.0">                       .=+*#$$$$#*+=.</tspan>
+<tspan x="48" y="79.0">                    .=#%$########$%#=.</tspan>
+<tspan x="48" y="90.0">                  .+#$###&amp;&amp;&amp;&amp;&amp;&amp;###$#+.</tspan>
+<tspan x="48" y="101.0">                 :$##&amp;&amp;********&amp;&amp;##$:</tspan>
+<tspan x="48" y="112.0">                :$#&amp;**++======++**&amp;#$:</tspan>
+<tspan x="48" y="123.0">               .%#&amp;*+=-::::::::-=+*&amp;#%.</tspan>
+<tspan x="48" y="134.0">               $#&amp;*=-:.        .:-=*&amp;#$</tspan>
+<tspan x="48" y="145.0">              .#&amp;*=-:.          .:-+*&amp;#.</tspan>
+<tspan x="48" y="156.0">              =#*+-:.            .:-+*#=</tspan>
+<tspan x="48" y="167.0">              +&amp;*=-:.            .:-=*#+</tspan>
+<tspan x="48" y="178.0">              *&amp;*=-==++=----=++==-+*&amp;*</tspan>
+<tspan x="48" y="189.0">              *&amp;+=+*####*++*####*+=+&amp;*</tspan>
+<tspan x="48" y="200.0">              *&amp;+=|:::::|++|:::::|=+&amp;*</tspan>
+<tspan x="48" y="211.0">              +&amp;+=+*##*+=--=+*##*+=+&amp;+</tspan>
+<tspan x="48" y="222.0">              :#*=-:---:  ::---:-=*#:</tspan>
+<tspan x="48" y="233.0">               *#*=-:.    ||    .:=*#</tspan>
+<tspan x="48" y="244.0">               =#&amp;+=-:.  /||\  .:-+&amp;=</tspan>
+<tspan x="48" y="255.0">                *#&amp;+=-. .:++:. .-=&amp;#*</tspan>
+<tspan x="48" y="266.0">                :#&amp;&amp;+=-..----..-=&amp;&amp;#:</tspan>
+<tspan x="48" y="277.0">                 =#&amp;&amp;*+=+****+=*&amp;&amp;#=</tspan>
+<tspan x="48" y="288.0">                  =#&amp;&amp;&amp;########&amp;&amp;#=</tspan>
+<tspan x="48" y="299.0">                   :*#&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;#*:</tspan>
+<tspan x="48" y="310.0">                     .=+******+=.</tspan>
+<tspan x="48" y="321.0">                        .::::.</tspan>
+<tspan x="48" y="332.0">                  .::/==\    /==\::.</tspan>
+<tspan x="48" y="343.0">               .:/+***+=\  /=+***+\:.</tspan>
+<tspan x="48" y="354.0">            .:=*&amp;&amp;&amp;&amp;&amp;&amp;&amp;*|  |*&amp;&amp;&amp;&amp;&amp;&amp;&amp;*=:.</tspan>
+<tspan x="48" y="365.0">          .-+#%%%%####&amp;*|  |*####%%%%#+-.</tspan>
+<tspan x="48" y="376.0">         :=#%$###&amp;&amp;&amp;***|    |***&amp;&amp;&amp;###$#=:</tspan>
+<tspan x="48" y="387.0">        -#%$##&amp;&amp;***+++=|    |==+++***&amp;&amp;##%#-</tspan>
+<tspan x="48" y="398.0">       :#%$#&amp;**++==--:/      \:--==++**&amp;#$%#:</tspan>
+<tspan x="48" y="409.0">       +%$#&amp;*+=-::.  /   ||   \  .::-=+*&amp;#$%+</tspan>
+<tspan x="48" y="420.0">      .#%$#*+=-:.   /   .||.   \   .:-=+*#$%#.</tspan>
+<tspan x="48" y="431.0">      -%$#&amp;+=-:.   /   .+##+.   \   .:-=+&amp;#$%-</tspan>
+<tspan x="48" y="442.0">      =%$#*+=-.   /   .=#%%#=.   \   .-=+*#$%=</tspan>
+<tspan x="48" y="453.0">      =%$#*+-:.  /   :=#%%%%#=:   \  .:-+*#$%=</tspan>
+<tspan x="48" y="464.0">      -%$#&amp;+=-. /   :+#%%$$%%#+:   \ .-=+&amp;#$%-</tspan>
+<tspan x="48" y="475.0">      .#%$#*+=-/   :+#%$$$$%%#+:   \-=+*#$%#.</tspan>
+<tspan x="48" y="486.0">       +%$##&amp;*/   .=#%$$$$$$%#=.    \*&amp;#$%+</tspan>
+<tspan x="48" y="497.0">       :#%$##&amp;+==+#%$########$%#+==+&amp;##$%#:</tspan>
+<tspan x="48" y="508.0">        -#%$###&amp;&amp;&amp;###&amp;&amp;****&amp;&amp;###&amp;&amp;&amp;###$%#-</tspan>
+<tspan x="48" y="519.0">         :=#%%$######&amp;&amp;++++&amp;&amp;######$%%#=:</tspan>
+<tspan x="48" y="530.0">           .-+#%$$####&amp;&amp;&amp;&amp;&amp;&amp;####$$%#+-.</tspan>
+<tspan x="48" y="541.0">              .:=*#%%$$$$$$$$%%#*=:.</tspan>
+<tspan x="48" y="552.0">                   .:-=++++=-:.</tspan>
+  </text>
+  <text xml:space="preserve" fill="#e6edf3" font-family="Consolas, Monaco, 'Courier New', monospace" font-size="13.5" letter-spacing="0">
+<tspan x="600" y="110.0">--------------------------------</tspan>
+<tspan x="600" y="125.4">Name ................... Om Tilekar</tspan>
+<tspan x="600" y="140.8">GitHub ................. Omtilekar</tspan>
+<tspan x="600" y="156.2">OS ..................... Windows 11, Linux</tspan>
+<tspan x="600" y="171.6">IDE .................... VS Code, Jupyter</tspan>
+<tspan x="600" y="187.0">Role ................... AI / NLP / Data Science</tspan>
+<tspan x="600" y="202.4"></tspan>
+<tspan x="600" y="217.8">Languages.Programming</tspan>
+<tspan x="600" y="233.2">Python, SQL, C++, JavaScript</tspan>
+<tspan x="600" y="248.6"></tspan>
+<tspan x="600" y="264.0">AI.ML</tspan>
+<tspan x="600" y="279.4">NLP, LLMs, SLMs, RAG, ML</tspan>
+<tspan x="600" y="294.8"></tspan>
+<tspan x="600" y="310.2">Research</tspan>
+<tspan x="600" y="325.6">NLP, AI Safety, Evaluation</tspan>
+<tspan x="600" y="341.0">Retrieval Systems</tspan>
+<tspan x="600" y="356.4"></tspan>
+<tspan x="600" y="371.8">Tools</tspan>
+<tspan x="600" y="387.2">PyTorch, scikit-learn, XGBoost</tspan>
+<tspan x="600" y="402.6">FastAPI, PostgreSQL</tspan>
+<tspan x="600" y="418.0"></tspan>
+<tspan x="600" y="433.4">GitHub.Stats</tspan>
+<tspan x="600" y="448.8">Repos owned ............ --</tspan>
+<tspan x="600" y="464.2">Repos contributed ...... --</tspan>
+<tspan x="600" y="479.6">Stars received ......... --</tspan>
+<tspan x="600" y="495.0">Followers .............. --</tspan>
+<tspan x="600" y="510.4">Commits ................ --</tspan>
+<tspan x="600" y="525.8">Lines added ............ --</tspan>
+<tspan x="600" y="541.2">Lines deleted .......... --</tspan>
+<tspan x="600" y="556.6">Net LOC ................ --</tspan>
+<tspan x="600" y="572.0"></tspan>
+<tspan x="600" y="587.4">Updated ......... 2026-08-24 04:22 UTC</tspan>
+<tspan x="600" y="602.8">Status .......... offline preview</tspan>
+  </text>
+  <text x="600" y="84" fill="#58a6ff" font-family="Consolas, Monaco, 'Courier New', monospace" font-size="16" font-weight="700">omtilekar</text>
+  <rect x="596" y="94" width="268" height="2" fill="#1f6feb" opacity="0.35"/>
+</svg>
